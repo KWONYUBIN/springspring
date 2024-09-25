@@ -1,4 +1,4 @@
-package com.example.spring20240924.controller;
+package com.example.springspring.controller;
 
 
 import org.springframework.stereotype.Controller;

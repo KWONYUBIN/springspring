@@ -1,9 +1,8 @@
-package com.example.spring20240924.controller;
+package com.example.springspring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.context.request.WebRequest;
 
 @Controller
 public class Controller03 {

@@ -1,10 +1,8 @@
-package com.example.spring20240924.controller;
+package com.example.springspring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import static java.lang.StringTemplate.STR;
 
 @Controller
 @RequestMapping("main6")
