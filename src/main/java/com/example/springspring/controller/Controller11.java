@@ -1,5 +1,9 @@
 package com.example.springspring.controller;
 
+import com.example.springspring.dto.c11.Car;
+import com.example.springspring.dto.c11.Person;
+import com.example.springspring.dto.c11.Player;
+import com.example.springspring.dto.c11.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -62,4 +66,47 @@ public class Controller11 {
 
         return null;
     }
+
+    @RequestMapping("sub5")
+    public String sub5(Model model){
+         // List 내의  JavaBeans
+         List<Student> students = List.of(
+                new Student(1, "son", 33, 98.1234, "gmail"),
+                new Student(5, "hong", 55, 77.33, "yahoo"),
+                new Student(7, "messi", 66, 88.44, "daum"),
+                new Student(10, "otani", 22, 66.11, "naver"));
+
+        model.addAttribute("students",students);
+        return null;
+    }
+
+    @RequestMapping("sub6")
+    public String sub6(Model model) {
+        model.addAttribute("carList", List.of(
+                new Car("model x", 5000, false),
+                new Car("model s", 4000, true),
+                new Car("truck", 3000, false)
+        ));
+
+        return null;
+
+    }
+    @RequestMapping("sub7")
+    public String sub7(Model model) {
+        // JavaBeans 내의 List
+        model.addAttribute("person",
+                new Person("donald", "trump", 77, List.of("game", "soccer", "golf")));
+        return null;
+    }
+
+    @RequestMapping("sub8")
+    public String sub8(Model model) {
+        model.addAttribute("player",
+                new Player("donal", "trump", "yahoo", true,
+                        List.of("토트넘", "맨시티", "다저스"),
+                        List.of(3.14, 5.12, 6.34, 7.56)));
+        return null;
+    }
+
+
 }

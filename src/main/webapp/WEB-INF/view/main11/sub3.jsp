@@ -13,9 +13,9 @@
 <p>${data.languages[2]}</p>
 <p>${data.languages[3]}</p>
 <hr>
-<p>${data["languages[0]"]}</p>
-<p>${data["languages[1]"]}</p>
-<p>${data["languages[2]"]}</p>
-<p>${data["languages[3]"]}</p>
+<p>${data["languages"][0]}</p>
+<p>${data["languages"][1]}</p>
+<p>${data["languages"][2]}</p>
+<p>${data["languages"][3]}</p>
 </body>
 </html>
