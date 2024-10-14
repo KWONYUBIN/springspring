@@ -303,8 +303,5 @@ public class Controller27 {
             }
             model.addAttribute("orderList", list);
         }
-
-
     }
-
 }

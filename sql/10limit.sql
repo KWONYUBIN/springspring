@@ -102,3 +102,4 @@ SELECT  CustomerName, ContactName, Address, City, PostalCode, Country
 FROM Customers;
 SELECT COUNT(*)
 FROM Customers;
+
