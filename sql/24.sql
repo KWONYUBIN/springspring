@@ -1,7 +1,7 @@
 USE db1;
 # my_table39
 # 학생 정보
-# 이르무 성벼ㄹ, 연락처, 나이
+# 이름, 성별, 연락처, 나이
 
 CREATE TABLE my_table39
 (

@@ -1,4 +1,4 @@
-package com.example.springspring.dto.ch29;
+package com.example.springspring.dto.c29;
 
 import lombok.Data;
 
