@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // or 연산 (||)
+  // : 첫번째값이 truthy 이면 첫번째값 아니면 두번째값이 출력
+
+  console.log(true || true); // true
+  console.log(true || false); // true
+  console.log(false || true); // true
+  console.log(false || false); // false
+
+  console.log("hello" || true); // "hello"
+  console.log("hi" || false); // "hi"
+  console.log(9 || false); // 9
+
+  console.log(0 || true); // true
+  console.log("" || true); // true
+  console.log(null || false); // false
+
+  console.log(0 || "hello"); // "hello"
+  console.log("" || "hi"); // "hi"
+  console.log(false || "world"); // "world"
+</script>
+</body>
+</html>
