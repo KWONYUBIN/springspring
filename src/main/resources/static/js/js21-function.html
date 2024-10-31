@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // () : 함수 실행시 값을 전달 받는 변수(parameter) 목록
+  // 괄호() 안에 아무것도 없르면 값을 전달 받는 변수(parameter)가 없는거임
+  function fun1(v1, v2, v3) {
+    console.log(v1, v2, v3, "hello")
+  }
+
+  fun1(3); // () 안에 있는 걸 argument 라고함  // 3 'hello'
+  console.log("hi");
+  fun1(5);  // 5 'hello'
+  // parameter와 argument엔 뭐가 들어가도 상관없느데 순서는 일치해야함
+  fun1(9, 7);
+  fun1("hi", "abc", "def");
+  fun1("hi", 3, 3.14);
+
+  //
+  function fun2(a, b) {
+    console.log(a + b);
+  }
+
+  fun2(5, 3); // 콘솔에 8이 출력되도록 fun2 함수 작성
+  fun2(10, 20); // 콘솔에 30이 출력되도록 fun2 함수 작성
+  fun2("10", "20"); // 1020
+
+  // arrow function 에서  파라미터 목록이 하나면 () 생략 가능
+  function fun3(a) {
+    console.log(a);
+  }
+
+  let fun4 = function (a) {
+    console.log(a);
+  }
+  let fun5 = (a) => {
+    console.log(a);
+  }
+  let fun6 = a => {
+    console.log(a);
+  }
+</script>
+</body>
+</html>
