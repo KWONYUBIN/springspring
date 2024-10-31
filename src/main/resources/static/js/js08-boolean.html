@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = true;
+  let b = false;
+
+  // truthy (true 같은 것) : falsy 외 모두
+  // falsy (false 같은 것) : undefined, null, "", 0, false, NaN
+  // *falsy 를 알아두자~~*
+
+  // 아래 있는 것들은 모두 falsy 이기 때문에 else 문으로 출력됨
+  if (false) {
+    console.log(1)
+  } else {
+    console.log(2)
+  }
+
+  if (undefined) {
+    console.log(3)
+  } else {
+    console.log(4)
+  }
+
+  let c = 5 % 0; // NaN
+
+  if (c) {
+    console.log(5)
+  } else {
+    console.log(6)
+  }
+
+  if (null) {
+    console.log(7)
+  } else {
+    console.log(8)
+  }
+
+  if ("") {
+    console.log(9)
+  } else {
+    console.log(10)
+  }
+
+  if (0) {
+    console.log(11)
+  } else {
+    console.log(12)
+  }
+
+ // falsy 같지만 아닌 것들
+
+  if ("  ") {           // 큰따옴표 안에 뭔가가 들어있어서 아님
+    console.log(13)
+  } else {
+    console.log(14)
+  }
+
+  if ("0") {            // 큰따옴표 안에 0이 있어서 아님
+    console.log(15)
+  } else {
+    console.log(16)
+  }
+
+  if ("false") {        // 큰따옴표 안에 false 가 있어서 아님
+    console.log(17)
+  } else {
+    console.log(18)
+  }
+
+  if ("undefined") {       // 큰따옴표 안에 undefined 가 있어서 아님
+    console.log(19)
+  } else {
+    console.log(20)
+  }
+
+  // 아래 있는 것들은 걍 falsy 가 아님
+  if ([]) {
+    console.log(21)
+  } else {
+    console.log(22)
+  }
+
+  if ({}) {
+    console.log(23)
+  } else {
+    console.log(24)
+  }
+
+
+</script>
+
+
+
+</body>
+</html>
