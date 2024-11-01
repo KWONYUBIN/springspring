@@ -7,10 +7,10 @@
 <body>
 <script>
   let a = 3;
-  console.log(a)
+  console.log(a) // 3
 
   let b = a;
-  console.log(a, b);
+  console.log(a, b); // 3, 3
 
   function fun1() {
     console.log("hello");
@@ -18,9 +18,9 @@
 
   let c = fun1;
   console.log("fun1 호출");
-  fun1();
+  fun1();   // "hello"
   console.log("c 호출");
-  c();
+  c();     // "hello"
 
   let fun2 = function () {
     console.log("이름 없는 함수의 코드들.");
