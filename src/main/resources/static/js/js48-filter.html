@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // filter 는 복사를 하는 것이기 때문에 원본 손상x
+  let a = [3, 1, 4, 1, 5, 9, 2];
+
+  let f1 = a.find(e => e % 3 === 0);
+  console.log(f1); // 3
+
+  let f2 = a.filter(e => e % 3 === 0);
+  console.log(f2); // [3, 9]  // 3의 배수인 3, 9만 복사됨 따라서 filter은 배열임
+
+  let f3 = a.filter(e => e === 1);
+  console.log(f3) // [1, 1]
+
+  let f4 = a.filter(e => e % 2 === 0);
+  console.log(f4); // [4, 2]
+
+
+  let b = ["hankang", "faker", "rose", "son", "apt"];
+
+  // 코드 완성
+
+  // 세글자인 아이템만 출력
+  let b1 = b.filter(i => i.length === 3);
+  console.log(b1);
+  // 네글자 이상인 아이템만 출력
+  let b2 = b.filter(i => i.length >= 4);
+  console.log(b2);
+  // 홀수 글자 수인 아이템만 출력
+  let b3 = b.filter(i => i.length % 2 === 1);
+  console.log(b3);
+
+  //
+  // 세글자인 아이템만 출력 (for문 사용)
+  const f7 = [];
+  for (let i = 0; i < b.length; i++) {
+    if (b[i].length === 3) {
+      f7.push(b[i]);
+    }
+  }
+  console.log(f7)
+
+
+</script>
+</body>
+</html>
