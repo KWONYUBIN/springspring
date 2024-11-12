@@ -1,5 +1,6 @@
 USE db1;
 
+
 # 데이터 타입
 # 문자형
 # 가변형
@@ -33,6 +34,7 @@ INSERT INTO my_table4
     VALUE ('흥민', '손흥민', '서울특별시');
 SELECT *
 FROM my_table4;
+
 
 CREATE TABLE my_table5
 (

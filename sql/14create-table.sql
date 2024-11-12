@@ -56,3 +56,5 @@ CREATE TABLE my_table3
 DESCRIBE my_table3;
 DESC my_table3;
 
+
+
